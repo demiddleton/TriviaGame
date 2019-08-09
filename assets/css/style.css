@@ -10,9 +10,10 @@ body {
     margin: 80px 40px;
     height: 100%;
     text-align: center;
-    height: 600px;
+    height: 500px;
 }
 
 #timeRemaining-text {
 font-size: 20px;
+color: red;
 }
