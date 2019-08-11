@@ -1,12 +1,13 @@
-//Create variable to hold the setInterval timer
+//Declare variable to hold the setInterval timer
 var intervalID;
 
-//Create variable equal to the start time
+//Declare variable equal to the start time
 var time = 15;
 
-//Create variable to track the number of questions answered correctly
+//Declare variable to track the number of questions answered correctly
 var correct = 0;
 
+//
 
 //Create a function to hide the start button when it is clicked
 $("#startButton").click(function () {
@@ -28,6 +29,9 @@ $("#startButton").click(function () {
           
         }
     }
+    //Player cannot pick more than one answer per question
+    
+
     //Create function to increase number of correct answers
     $("#q1Checkbox4").click(function () {
         correct++;
@@ -46,5 +50,4 @@ $("#startButton").click(function () {
 
 
 
-//Player cannot pick more than one answer per question
-//Display screen saying "Game Over" and number of correct answers and # of incorrect answers
+
