@@ -12,24 +12,37 @@ var correct = 0;
 $("#startButton").click(function () {
     $(".start").hide();
     $(".questions").show();
+
+    //Create timer to countdown from 15 seconds once the start button is clicked
     intervalID = setInterval(count, 1000);
-    function count(){
-        $("#timeRemaining-text").text("You have " + time + " seconds left." );
+    function count() {
+        $("#timeRemaining-text").text("You have " + time + " seconds left.");
         time--;
 
-        if(time < 0){
+        if (time < 0) {
             $(".questions").hide();
             clearInterval(intervalID);
             $("#timeRemaining-text").hide();
             $("#done-text").show();
-            $("#done-text").text("You answered " + correct + " out of the three questions correctly." );
+            $("#done-text").text("You answered " + correct + " out of the 3 questions correctly.");
         }
-
     }
+    //Create function to increase number of correct answers
+    $("#q1Checkbox4").click(function () {
+        correct++;
+    });
+
+    $("#q2Checkbox2").click(function () {
+        correct++;
+    });
+
+    $("#q3Checkbox2").click(function () {
+        correct++;
+    });
 
 });
 
- //Create timer to countdown from 15 seconds once the start button is clicked
+
 
 
 //Player cannot pick more than one answer per question
