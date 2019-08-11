@@ -30,7 +30,19 @@ $("#startButton").click(function () {
         }
     }
     //Player cannot pick more than one answer per question
-    
+    $(document).ready(function(){
+        $('.q1').click(function() {
+            $('.q1').not(this).prop('checked', false);
+        });
+
+        $('.q2').click(function() {
+            $('.q2').not(this).prop('checked', false);
+        });
+
+        $('.q3').click(function() {
+            $('.q3').not(this).prop('checked', false);
+        });
+    });
 
     //Create function to increase number of correct answers
     $("#q1Checkbox4").click(function () {
