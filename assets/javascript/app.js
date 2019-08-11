@@ -25,6 +25,7 @@ $("#startButton").click(function () {
             $("#timeRemaining-text").hide();
             $("#done-text").show();
             $("#done-text").text("You answered " + correct + " out of the 3 questions correctly.");
+          
         }
     }
     //Create function to increase number of correct answers
