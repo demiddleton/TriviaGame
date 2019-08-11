@@ -23,8 +23,16 @@ font-size: 20px;
 color: red;
 }
 
+#done-text {
+    display: none;
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+}
+
 .questions {
     display: none;
+    
 }
 
 #startButton {
@@ -32,4 +40,10 @@ color: red;
     height: 100px;
     margin-top: 60px;
     font-size: 34px;
+}
+
+#done-text {
+    font-size: 20px;
+    color: blue;
+    text-align: center;
 }
