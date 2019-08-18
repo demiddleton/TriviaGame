@@ -33,44 +33,30 @@ $(document).ready(function () {
         //Player cannot pick more than one answer per question    
         $('.q1').click(function () {
             $('.q1').not(this).prop('checked', false);
-            console.log(this);
+                      
+            if ($(this).val() === "option4") {
+                correct++;
+                console.log(correct);
+            }
         });
-        correct = q1Function(correct);
 
         $('.q2').click(function () {
             $('.q2').not(this).prop('checked', false);
-            console.log(this);
+                       
+            if ($(this).val() == "option6") {
+                correct++;
+                console.log(correct);
+            }
         });
-        correct = q2Function(correct);
-
 
         $('.q3').click(function () {
             $('.q3').not(this).prop('checked', false);
-            console.log(this);
+                        
+            if ($(this).val() == "option10") {
+                correct++;
+                console.log(correct);
+            }
         });
 
-        correct = q3Function(correct);
     });
-
 });
-
-function q1Function(correct) {
-    if ($("#q1Checkbox4")) {
-        correct++;
-    }
-    return correct;
-}
-
-function q2Function(correct) {
-    if ($("#q2Checkbox2")) {
-        correct++;
-    }
-    return correct;
-}
-
-function q3Function(correct) {
-    if ($("#q3Checkbox2")) {
-        correct++;
-    }
-    return correct;
-}

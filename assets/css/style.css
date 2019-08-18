@@ -43,7 +43,12 @@ color: red;
 }
 
 #done-text {
-    font-size: 20px;
+    font-size: 30px;
     color: blue;
+    text-align: center;
+}
+
+#correct-text {
+    font-size: 25px;
     text-align: center;
 }
