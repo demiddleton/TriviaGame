@@ -4,7 +4,7 @@ $(document).ready(function () {
     var intervalID;
 
     //Declare variable equal to the start time
-    var time = 10;
+    var time = 30;
 
     //Declare variable to track the number of questions answered correctly
     var correct = 0;
