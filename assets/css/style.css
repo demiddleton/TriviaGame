@@ -15,7 +15,7 @@ body {
     margin: 80px 40px;
     height: 100%;
     text-align: center;
-    height: 500px;
+    height: 600px;
 }
 
 #timeRemaining-text {
@@ -25,7 +25,7 @@ color: red;
 
 #done-text {
     display: none;
-    font-size: 20px;
+    font-size: 40px;
     color: blue;
     text-align: center;
 }
@@ -42,13 +42,21 @@ color: red;
     font-size: 34px;
 }
 
-#done-text {
-    font-size: 30px;
-    color: blue;
-    text-align: center;
+button {
+    width: 300px;
+    height: 80px;
+    margin-top: 40px;
+    font-size: 34px;
 }
 
 #correct-text {
-    font-size: 25px;
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+#incorrect-text {
+    display: none;
+    font-size: 20px;
     text-align: center;
 }
