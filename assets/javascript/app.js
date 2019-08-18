@@ -38,12 +38,13 @@ $(document).ready(function () {
                 correct++;
                 console.log(correct);
             }
+            
         });
 
         $('.q2').click(function () {
             $('.q2').not(this).prop('checked', false);
                        
-            if ($(this).val() == "option6") {
+            if ($(this).val() === "option6") {
                 correct++;
                 console.log(correct);
             }
@@ -52,7 +53,7 @@ $(document).ready(function () {
         $('.q3').click(function () {
             $('.q3').not(this).prop('checked', false);
                         
-            if ($(this).val() == "option10") {
+            if ($(this).val() === "option10") {
                 correct++;
                 console.log(correct);
             }
