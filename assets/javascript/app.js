@@ -75,7 +75,7 @@ $(document).ready(function () {
     function q1IsChecked() {
         var q1Value = $('.q1:checked').val();
         console.log(q1Value);
-        if ($(".q1").val() == "_blank") {
+      if (!$("input[name='inlineRadioOptions1']:checked").val())  {
             unanswered++;
         }
 
@@ -89,7 +89,7 @@ $(document).ready(function () {
     function q2IsChecked() {
         var q2Value = $('.q2:checked').val();
         console.log(q2Value);
-        if ($(".q2").val() == "_blank") {
+        if (!$("input[name='inlineRadioOptions2']:checked").val())  {
             unanswered++;
         }
 
@@ -102,10 +102,10 @@ $(document).ready(function () {
     function q3IsChecked() {
         var q3Value = $('.q3:checked').val();
         console.log(q3Value);
-        if ($(".q3").val() == "_blank") {
+        if (!$("input[name='inlineRadioOptions3']:checked").val())  {
             unanswered++;
-        }
-
+        } 
+        
         if (q3Value != "option4") {
             incorrect++;
         } else {
