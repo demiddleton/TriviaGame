@@ -60,3 +60,8 @@ button {
     font-size: 20px;
     text-align: center;
 }
+#unanswered-text {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
