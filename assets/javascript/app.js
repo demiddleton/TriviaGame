@@ -16,6 +16,30 @@ $(document).ready(function () {
         $(".start").hide();
         $(".questions").show();
 
+        //Create a function to stop timer and display stats once the done button is clicked
+        $("#doneButton").click(function () {
+            $(".questions").hide();
+                clearInterval(intervalID);
+                $("#timeRemaining-text").hide();
+
+                q1IsChecked();
+                q2IsChecked();
+                q3IsChecked();
+
+
+                $("#done-text").show();
+                $("#done-text").text("All Done!");
+
+                $("#correct-text").show();
+                $("#correct-text").text("Correct Answers: " + correct);
+
+                $("#incorrect-text").show();
+                $("#incorrect-text").text("Incorrect Answers: " + incorrect);
+
+                $("#unanswered-text").show();
+                $("#unanswered-text").text("Unanswered: " + unanswered);
+            
+        });
 
         //Create timer to countdown from 15 seconds once the start button is clicked
         intervalID = setInterval(count, 1000);
@@ -54,7 +78,7 @@ $(document).ready(function () {
         if ($(".q1").val() == "_blank") {
             unanswered++;
         }
-        
+
         if (q1Value != "option4") {
             incorrect++;
         } else {
@@ -62,31 +86,31 @@ $(document).ready(function () {
         }
     }
 
-        function q2IsChecked() {
-            var q2Value = $('.q2:checked').val();
-            console.log(q2Value);
-            if ($(".q2").val() == "_blank") {
-                unanswered++;
-            }
-            
-            if (q2Value != "option4") {
-                incorrect++;
-            } else {
-                correct++;
-            }
+    function q2IsChecked() {
+        var q2Value = $('.q2:checked').val();
+        console.log(q2Value);
+        if ($(".q2").val() == "_blank") {
+            unanswered++;
         }
-        function q3IsChecked() {
-            var q3Value = $('.q3:checked').val();
-            console.log(q3Value);
-            if ($(".q3").val() == "_blank") {
-                unanswered++;
-            } 
-            
-            if (q3Value != "option4") {
-                incorrect++;
-            } else {
-                correct++;
-            }
+
+        if (q2Value != "option4") {
+            incorrect++;
+        } else {
+            correct++;
         }
-    });
+    }
+    function q3IsChecked() {
+        var q3Value = $('.q3:checked').val();
+        console.log(q3Value);
+        if ($(".q3").val() == "_blank") {
+            unanswered++;
+        }
+
+        if (q3Value != "option4") {
+            incorrect++;
+        } else {
+            correct++;
+        }
+    }
+});
 
