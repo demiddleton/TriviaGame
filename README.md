@@ -8,3 +8,7 @@ In this assignment, I creatd a Trivia game using JavaScript for the logic and jQ
 * The game ends when the time runs out and the page will reveal the number of questions that players answer correctly and incorrectly.
 * The player is not allowed to pick more than one answer per question.
 * A countdown timer will be displayed.
+
+_______________________________________________________________________________________________________________________
+Here's the link to the deployed site:
+[Trivia Game](https://demiddleton.github.io/TriviaGame/)
