@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Insert Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--Link CSS stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Link jQuery library-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <title>Triva Game</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <!--Content Row-->
+        <div class="row" id="contentRow">
+            <div class="col-md-12">
+                <header>
+                    <h1> Totally Trivial Trivia!</h1>
+                </header>
+                <hr>
+
+                <p id="timeRemaining-text"> <strong></strong></p>
+
+                <!--Text to display when time is out-->
+                <strong>
+                    <p id="done-text"></p>
+                    <p id="correct-text"></p>
+                    <p id="incorrect-text"></p>
+                    <p id="unanswered-text"></p>
+                </strong>
+
+
+                <hr>
+                <div class="start">
+                    <!--Start button-->
+                    <p><strong>Please click on the start button below when you are ready to begin.<br> You will have 30
+                            seconds to answer all three questions.</strong></p>
+                    <button type="button" class="btn btn-warning" id="startButton">START</button>
+                </div>
+
+                <div class="questions">
+
+                    <p id="q1-text"><strong>Which player holds the distinction of being the all-time touchdown leader in
+                            NFL
+                            history?</strong></p>
+                    <!--Question 1 Answer choices-->
+                    <div class="form-check form-check-inline q1">
+                        <input class="form-check-input q1" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                        <label class="form-check-label q1" for="inlineRadio1">Payton Manning</label>
+                      </div>
+                      <div class="form-check form-check-inline q1">
+                        <input class="form-check-input q1" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option2">
+                        <label class="form-check-label q1" for="inlineRadio1">Emmitt Smith</label>
+                      </div>
+                      <div class="form-check form-check-inline q1">
+                        <input class="form-check-input q1" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option3">
+                        <label class="form-check-label q1" for="inlineRadio1">Walter Payton</label>
+                      </div>
+                      <div class="form-check form-check-inline q1">
+                        <input class="form-check-input q1" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option4">
+                        <label class="form-check-label q1" for="inlineRadio1">Jerry Rice</label>
+                      </div>
+                    <br>
+                    <hr>
+
+                    <p id="q2-text"><strong>Which of the following NFL teams actually play in its home city?</strong>
+                    </p>
+                    <!--Question 2 Answer choices-->
+                    <div class="form-check form-check-inline q2">
+                        <input class="form-check-input q2" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option5">
+                        <label class="form-check-label q2" for="inlineRadio2">Dallas Cowboys</label>
+                      </div>
+                      <div class="form-check form-check-inline q2">
+                        <input class="form-check-input q2" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option6">
+                        <label class="form-check-label q2" for="inlineRadio2">Los Angeles Rams</label>
+                      </div>
+                      <div class="form-check form-check-inline q2">
+                        <input class="form-check-input q2" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option7">
+                        <label class="form-check-label" for="inlineRadio2">Washington Redskins</label>
+                      </div>
+                      <div class="form-check form-check-inline q2">
+                        <input class="form-check-input q2" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option8">
+                        <label class="form-check-label q2" for="inlineRadio2">San Francisco 49ers</label>
+                      </div>
+                    <br>
+                    <hr>
+
+                    <p id="q3-text"><strong>Which is the only team in NFL history to have scored three touchdowns in
+                            less than a minute?</strong></p>
+                    <!--Question 3 Answer choices-->
+                    <div class="form-check form-check-inline q3">
+                        <input class="form-check-input q3" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option9">
+                        <label class="form-check-label q3" for="inlineRadio3">New Orleans Saints</label>
+                      </div> 
+                      <div class="form-check form-check-inline q3">
+                        <input class="form-check-input q3" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option10">
+                        <label class="form-check-label q3" for="inlineRadio3">New England Patriots</label>
+                      </div>
+                      <div class="form-check form-check-inline q3">
+                        <input class="form-check-input q3" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option11">
+                        <label class="form-check-label q3" for="inlineRadio3">Buffalo Bills</label>
+                      </div>
+                      <div class="form-check form-check-inline q3">
+                        <input class="form-check-input q3" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option12">
+                        <label class="form-check-label q3" for="inlineRadio3">Kansas City Chiefs</label>
+                      </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-dark" id="doneButton">Done</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--Link app.js -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
