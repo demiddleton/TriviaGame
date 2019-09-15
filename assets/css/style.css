@@ -51,17 +51,17 @@ button {
 
 #correct-text {
     display: none;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
 #incorrect-text {
     display: none;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 #unanswered-text {
     display: none;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }

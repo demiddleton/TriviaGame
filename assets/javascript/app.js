@@ -19,26 +19,26 @@ $(document).ready(function () {
         //Create a function to stop timer and display stats once the done button is clicked
         $("#doneButton").click(function () {
             $(".questions").hide();
-                clearInterval(intervalID);
-                $("#timeRemaining-text").hide();
+            clearInterval(intervalID);
+            $("#timeRemaining-text").hide();
 
-                q1IsChecked();
-                q2IsChecked();
-                q3IsChecked();
+            q1IsChecked();
+            q2IsChecked();
+            q3IsChecked();
 
 
-                $("#done-text").show();
-                $("#done-text").text("All Done!");
+            $("#done-text").show();
+            $("#done-text").text("All Done!");
 
-                $("#correct-text").show();
-                $("#correct-text").text("Correct Answers: " + correct);
+            $("#correct-text").show();
+            $("#correct-text").text("Correct Answers: " + correct);
 
-                $("#incorrect-text").show();
-                $("#incorrect-text").text("Incorrect Answers: " + incorrect);
+            $("#incorrect-text").show();
+            $("#incorrect-text").text("Incorrect Answers: " + incorrect);
 
-                $("#unanswered-text").show();
-                $("#unanswered-text").text("Unanswered: " + unanswered);
-            
+            $("#unanswered-text").show();
+            $("#unanswered-text").text("Unanswered: " + unanswered);
+
         });
 
         //Create timer to countdown from 15 seconds once the start button is clicked
@@ -74,41 +74,41 @@ $(document).ready(function () {
     });
     function q1IsChecked() {
         var q1Value = $('.q1:checked').val();
-        console.log(q1Value);      
+        console.log(q1Value);
 
         if (q1Value != "option4") {
             incorrect++;
         } else {
             correct++;
         }
-        if (!$("input[name='inlineRadioOptions1']:checked").val())  {
+        if (!$("input[name='inlineRadioOptions1']:checked").val()) {
             unanswered++;
         }
     }
 
     function q2IsChecked() {
         var q2Value = $('.q2:checked').val();
-        console.log(q2Value);      
+        console.log(q2Value);
 
         if (q2Value != "option6") {
             incorrect++;
         } else {
             correct++;
         }
-        if (!$("input[name='inlineRadioOptions2']:checked").val())  {
+        if (!$("input[name='inlineRadioOptions2']:checked").val()) {
             unanswered++;
         }
     }
     function q3IsChecked() {
         var q3Value = $('.q3:checked').val();
         console.log(q3Value);
-                 
+
         if (q3Value != "option10") {
             incorrect++;
         } else {
             correct++;
         }
-        if (!$("input[name='inlineRadioOptions3']:checked").val())  {
+        if (!$("input[name='inlineRadioOptions3']:checked").val()) {
             unanswered++;
         }
     }
