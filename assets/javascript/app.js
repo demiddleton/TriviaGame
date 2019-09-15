@@ -74,42 +74,42 @@ $(document).ready(function () {
     });
     function q1IsChecked() {
         var q1Value = $('.q1:checked').val();
-        console.log(q1Value);
-      if (!$("input[name='inlineRadioOptions1']:checked").val())  {
-            unanswered++;
-        }
+        console.log(q1Value);      
 
         if (q1Value != "option4") {
             incorrect++;
         } else {
             correct++;
         }
+        if (!$("input[name='inlineRadioOptions1']:checked").val())  {
+            unanswered++;
+        }
     }
 
     function q2IsChecked() {
         var q2Value = $('.q2:checked').val();
-        console.log(q2Value);
-        if (!$("input[name='inlineRadioOptions2']:checked").val())  {
-            unanswered++;
-        }
+        console.log(q2Value);      
 
-        if (q2Value != "option4") {
+        if (q2Value != "option6") {
             incorrect++;
         } else {
             correct++;
+        }
+        if (!$("input[name='inlineRadioOptions2']:checked").val())  {
+            unanswered++;
         }
     }
     function q3IsChecked() {
         var q3Value = $('.q3:checked').val();
         console.log(q3Value);
-        if (!$("input[name='inlineRadioOptions3']:checked").val())  {
-            unanswered++;
-        } 
-        
-        if (q3Value != "option4") {
+                 
+        if (q3Value != "option10") {
             incorrect++;
         } else {
             correct++;
+        }
+        if (!$("input[name='inlineRadioOptions3']:checked").val())  {
+            unanswered++;
         }
     }
 });
